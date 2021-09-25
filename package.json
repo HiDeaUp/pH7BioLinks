@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple CLI bio links. NPM Business card.",
   "bin": {
-    "biolinks": "./bin/biolinks.js"
+    "pH7BioLinks": "./bin/biolinks.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

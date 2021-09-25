@@ -14,7 +14,7 @@ const options = {
 };
 
 try {
-    const res = fs.readFileSync(path.resolve(__dirname, "data.json"));
+    const res = fs.readFileSync(path.resolve(__dirname, '../data.json'));
     const userData = JSON.parse(res);
 
     const {
