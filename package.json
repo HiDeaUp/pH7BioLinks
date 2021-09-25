@@ -1,0 +1,18 @@
+{
+  "name": "clibiolinks",
+  "version": "1.0.0",
+  "description": "A simple CLI bio links. NPM Business card.",
+  "main": "./bin/biolinks.js",
+  "bin": {
+    "biolinks": "./bin/biolinks.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2"
+  }
+}
