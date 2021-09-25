@@ -2,13 +2,14 @@
   "name": "clibiolinks",
   "version": "1.0.0",
   "description": "A simple CLI bio links. NPM Business card.",
+  "main": "./bin/biolinks.js",
   "bin": {
     "pH7BioLinks": "./bin/biolinks.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/biolinks.js"
   },
-  "author": "",
+  "author": "Pierre-Henry Soria",
   "license": "MIT",
   "dependencies": {
     "boxen": "^5.1.2",
