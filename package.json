@@ -2,7 +2,6 @@
   "name": "clibiolinks",
   "version": "1.0.0",
   "description": "A simple CLI bio links. NPM Business card.",
-  "main": "./bin/biolinks.js",
   "bin": {
     "biolinks": "./bin/biolinks.js"
   },

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk';
-import boxen from 'boxen';
-import { readFileSync } from 'fs';
+const chalk = require('chalk');
+const boxen = require('boxen');
+const fs = require('fs');
+const path = require('path');
 
 // Boxen options
 const options = {
@@ -12,11 +13,11 @@ const options = {
     textAlignment: 'center',
 };
 
-const res = readFileSync(path.resolve(__dirname, "data.json"));
+const res = fs.readFileSync(path.resolve(__dirname, "data.json"));
 const userData = JSON.parse(res);
 
 if (userData) {
-    return null;
+    console.log(chalk.green('Cannot read data.json file!'));
 }
 
 const {
@@ -35,24 +36,24 @@ const data = {
     firstName: chalk.yellowBright.underline.italic(first_name),
     lastName: chalk.yellow.underline.italic(last_name),
 
-    labelWork: chalk.white.bold('      Work:'),
-    work: chalk.white(job_title),
+    labelWork: chalk.white.bold('Work:'),
+    work: chalk.magenta(job_title),
 
-    labelGiHub: chalk.white.bold('   GitHub:'),
+    labelGitHub: chalk.white.bold('GitHub:'),
     gitHub: chalk.cyan(github_link),
 
-    labelTwitter: chalk.white.bold('    Twitter:'),
+    labelTwitter: chalk.white.bold('Twitter:'),
     twitter: chalk.cyan(twitter_link),
 
-    labelLinkedIn: chalk.white.bold('  LinkedIn:'),
+    labelLinkedIn: chalk.white.bold('LinkedIn:'),
     linkedIn: chalk.cyan(linkedin_link),
 
 
-    labelWebsite: chalk.white.bold('       Website:'),
+    labelWebsite: chalk.white.bold('Website:'),
     website: chalk.cyan(blog_url),
 
-    labelCard: chalk.white.bold('      Card:'),
-    npxCard: chalk.white('npx biolinks')
+    labelCard: chalk.white.bold('Card:'),
+    npxCard: chalk.white.underline('npx biolinks')
 };
 
 const newline = '\n';
