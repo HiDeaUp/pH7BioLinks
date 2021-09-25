@@ -5,12 +5,12 @@ Generate easily your business card through the terminal (for nerds 🤓).
 ## Run my business card
 
 ```bash
-  npx pH7BioLinks
+npx pH7BioLinks
 ```
 
 If you wish to reuse it, you can easily update the links in the `data.json` file (the script will read from there 😄).
 
-If you edit the script on your machine, you will have to run `npm link` and then run `pH7BioLinks` in your terminal.
+If you edit the script on your machine, you will have to run `npm link` to locally _symlink_ the package, and then run `pH7BioLinks` in your terminal.
 
 ## 👨‍🍳 The Cooker
 
