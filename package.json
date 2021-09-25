@@ -2,6 +2,14 @@
   "name": "clibiolinks",
   "version": "1.0.0",
   "description": "A simple CLI bio links. NPM Business card.",
+"keywords": [̰
+    "card",
+    "business card",
+    "bio links",
+    "npm business card",
+    "Pierre-Henry",
+    "Pierre-Henry Soria"
+  ],
   "main": "./bin/biolinks.js",
   "bin": {
     "pH7BioLinks": "./bin/biolinks.js"
@@ -14,5 +22,9 @@
   "dependencies": {
     "boxen": "^5.1.2",
     "chalk": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeaUp/pH7BioLinks.git"
   }
 }
