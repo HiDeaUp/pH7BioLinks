@@ -24,7 +24,7 @@ try {
         github_link,
         twitter_link,
         linkedin_link,
-        blog_url
+        website_link
     } = userData;
 
     const data = {
@@ -45,7 +45,7 @@ try {
 
 
         labelWebsite: chalk.white.bold('Website:'),
-        website: chalk.cyan(blog_url),
+        website: chalk.cyan(website_link),
 
         labelCard: chalk.white.bold('Card:'),
         npxCard: chalk.white.underline('npx biolinks')

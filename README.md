@@ -5,7 +5,7 @@ Generate easily your business card through the terminal (for nerds 🤓).
 ## 👨‍💻 Run my business card
 
 ```bash
-npx pH7BioLinks
+npx ph7biolinks
 ```
 
 If you wish to reuse it, you can easily update the links in the `pierre-info.json` file (the script will read from there 😄).
@@ -14,7 +14,7 @@ If you edit the script on your machine, you will have to run `npm link` to local
 
 ## 👨‍🍳 The Coder
 
-Me, I'm [Pierre-Henry Soria](https://ph7.me), a programmatic and passionate software developer who enjoys challenges and continuous learning on a daily basis! 👨‍🏭
+Me, I'm **[Pierre-Henry Soria](https://ph7.me)**, a programmatic and passionate software developer who enjoys challenges and continuous learning on a daily basis! 👨‍🏭
 
 You can reach me at _hi {{AT}} ph7 [[D0T]] me_!
 

@@ -1,8 +1,8 @@
 {
-  "name": "clibiolinks",
+  "name": "ph7biolinks",
   "version": "1.0.0",
   "description": "A simple CLI bio links. NPM Business card.",
-"keywords": [̰
+  "keywords": [
     "card",
     "business card",
     "bio links",
@@ -12,7 +12,7 @@
   ],
   "main": "./bin/biolinks.js",
   "bin": {
-    "pH7BioLinks": "./bin/biolinks.js"
+    "ph7biolinks": "./bin/biolinks.js"
   },
   "scripts": {
     "start": "node ./bin/biolinks.js"
