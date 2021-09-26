@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 
-const chalk = require("chalk");
-const boxen = require("boxen");
-const fs = require("fs");
-const path = require("path");
+const chalk = require('chalk');
+const boxen = require('boxen');
+const fs = require('fs');
+const path = require('path');
 
 // Boxen options
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: "round",
-  textAlignment: "center",
+  borderStyle: 'round',
+  textAlignment: 'center',
 };
 
 try {
-  const res = fs.readFileSync(path.resolve(__dirname, "../pierre-info.json"));
+  const res = fs.readFileSync(path.resolve(__dirname, '../pierre-info.json'));
   const userData = JSON.parse(res);
 
   const {
@@ -31,26 +31,26 @@ try {
     firstName: chalk.yellowBright.underline.italic(first_name),
     lastName: chalk.yellow.underline.italic(last_name),
 
-    labelWork: chalk.white.bold("Work:"),
+    labelWork: chalk.white.bold('Work:'),
     work: chalk.magenta(job_title),
 
-    labelGitHub: chalk.white.bold("GitHub:"),
+    labelGitHub: chalk.white.bold('GitHub:'),
     gitHub: chalk.cyan(github_link),
 
-    labelTwitter: chalk.white.bold("Twitter:"),
+    labelTwitter: chalk.white.bold('Twitter:'),
     twitter: chalk.cyan(twitter_link),
 
-    labelLinkedIn: chalk.white.bold("LinkedIn:"),
+    labelLinkedIn: chalk.white.bold('LinkedIn:'),
     linkedIn: chalk.cyan(linkedin_link),
 
-    labelWebsite: chalk.white.bold("Website:"),
+    labelWebsite: chalk.white.bold('Website:'),
     website: chalk.cyan(website_link),
 
-    labelCard: chalk.white.bold("Card:"),
-    npxCard: chalk.white.underline("npx biolinks"),
+    labelCard: chalk.white.bold('Card:'),
+    npxCard: chalk.white.underline('npx biolinks'),
   };
 
-  const newline = "\n";
+  const newline = '\n';
   const output =
     newline +
     `${data.firstName} ${data.lastName}` +
@@ -70,5 +70,5 @@ try {
 
   console.log(chalk.green(boxen(output, options)));
 } catch (err) {
-  console.log(chalk.red.bold("Cannot read data.json file!"));
+  console.log(chalk.red.bold('Cannot read data.json file!'));
 }
