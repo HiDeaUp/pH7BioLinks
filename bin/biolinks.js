@@ -28,8 +28,8 @@ try {
   } = userData;
 
   const data = {
-    firstName: chalk.yellowBright.underline.italic(first_name),
-    lastName: chalk.yellow.underline.italic(last_name),
+    firstName: chalk.yellowBright.bold.italic.underline(first_name),
+    lastName: chalk.yellow.bold.italic.underline(last_name),
 
     labelWork: chalk.white.bold('Work:'),
     work: chalk.magenta(job_title),
