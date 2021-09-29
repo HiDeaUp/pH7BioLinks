@@ -18,6 +18,8 @@ Me, I'm **[Pierre-Henry Soria](https://ph7.me)**, a programmatic and passionate 
 
 You can reach me at _hi {{AT}} ph7 [[D0T]] me_!
 
+![My Business Card npm generator](business-card-npm-generator.png)
+
 ## 👀 Heavily inspired by ...
 
 This script was heavily inspired by [@natterstefan](https://github.com/natterstefan)'s NPM business card package.
