@@ -2,20 +2,17 @@
 
 const chalk = require('chalk');
 const boxen = require('boxen');
+
 const fs = require('fs');
 const path = require('path');
 
-// Boxen options
-const options = {
-  padding: 1,
-  margin: 1,
-  borderStyle: 'round',
-  textAlignment: 'center',
-};
+const styledDataFilename = 'pierre-info.json';
 
 try {
-  const res = fs.readFileSync(path.resolve(__dirname, '../pierre-info.json'));
-  const userData = JSON.parse(res);
+  const res = fs.readFileSync(
+    path.resolve(__dirname, `../${styledDataFilename}`)
+  );
+  const infoData = JSON.parse(res);
 
   const {
     first_name,
@@ -25,9 +22,9 @@ try {
     twitter_link,
     linkedin_link,
     website_link,
-  } = userData;
+  } = infoData;
 
-  const data = {
+  const styledData = {
     firstName: chalk.yellowBright.bold.italic.underline(first_name),
     lastName: chalk.yellow.bold.italic.underline(last_name),
 
@@ -53,22 +50,31 @@ try {
   const newline = '\n';
   const output =
     newline +
-    `${data.firstName} ${data.lastName}` +
+    `${styledData.firstName} ${styledData.lastName}` +
     newline +
     newline +
-    `${data.labelWork}  ${data.work}` +
+    `${styledData.labelWork}  ${styledData.work}` +
     newline +
-    `${data.labelGitHub}  ${data.gitHub}` +
+    `${styledData.labelGitHub}  ${styledData.gitHub}` +
     newline +
-    `${data.labelTwitter}  ${data.twitter}` +
+    `${styledData.labelTwitter}  ${styledData.twitter}` +
     newline +
-    `${data.labelLinkedIn}  ${data.linkedIn}` +
+    `${styledData.labelLinkedIn}  ${styledData.linkedIn}` +
     newline +
-    `${data.labelWebsite}  ${data.website}` +
+    `${styledData.labelWebsite}  ${styledData.website}` +
     newline +
-    `${data.labelCard}  ${data.npxCard} `;
+    `${styledData.labelCard}  ${styledData.npxCard} `;
+
+  // The Boxen options
+  const options = {
+    padding: 1,
+    margin: 1,
+    borderStyle: 'round',
+    textAlignment: 'center',
+  };
 
   console.log(chalk.green(boxen(output, options)));
 } catch (err) {
-  console.log(chalk.red.bold('Cannot read data.json file!'));
+  console.log(chalk.bgRed.bold(`Cannot read "${styledDataFilename}" file!`));
+  console.log(chalk.italic(err.message));
 }
