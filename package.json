@@ -23,8 +23,12 @@
     "boxen": "^5.1.2",
     "chalk": "^4.1.2"
   },
+  "homepage": "https://github.com/HiDeaUp/pH7BioLinks",
   "repository": {
     "type": "git",
     "url": "https://github.com/HiDeaUp/pH7BioLinks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiDeaUp/pH7BioLinks/issues"
   }
 }
