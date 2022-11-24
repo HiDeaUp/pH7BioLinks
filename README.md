@@ -28,8 +28,6 @@ You can reach me at _hi {{AT}} ph7 [[D0T]] me_!
 👉 **[Click here to watch on YouTube](https://www.youtube.com/watch?v=flXL1NiDBec)** 🎉
 
 
-https://www.youtube.com/watch?v=flXL1NiDBec
-
 ## 👀 Heavily inspired by ...
 
 This script was heavily inspired by [@natterstefan](https://github.com/natterstefan)'s NPM business card package.
