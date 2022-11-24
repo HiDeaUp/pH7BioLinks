@@ -20,6 +20,16 @@ You can reach me at _hi {{AT}} ph7 [[D0T]] me_!
 
 ![My Business Card npm generator](business-card-npm-generator.png)
 
+
+## :tv: Video
+
+[![Watch the video](https://i1.ytimg.com/vi/flXL1NiDBec/hqdefault.jpg)](https://www.youtube.com/watch?v=flXL1NiDBec)
+
+👉 **[Click here to watch on YouTube](https://www.youtube.com/watch?v=flXL1NiDBec)** 🎉
+
+
+https://www.youtube.com/watch?v=flXL1NiDBec
+
 ## 👀 Heavily inspired by ...
 
 This script was heavily inspired by [@natterstefan](https://github.com/natterstefan)'s NPM business card package.
