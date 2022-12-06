@@ -14,7 +14,7 @@ If you edit the script on your machine, you will have to run `npm link` to local
 
 ## 👨‍🍳 The Coder
 
-Me, I'm **[Pierre-Henry Soria](https://ph7.me)**, a programmatic and passionate software developer who enjoys challenges and continuous learning on a daily basis! 👨‍🏭
+Me, **[Pierre-Henry Soria](https://ph7.me)**. A programmatic and passionate software developer who enjoys challenges and continuous learning on a daily basis! 👨‍🏭
 
 You can reach me at _hi {{AT}} ph7 [[D0T]] me_!
 
